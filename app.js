@@ -91,11 +91,14 @@ $(document).ready(function(){
 
     $('.btn-primary').click(function(){
         //Se coloca el tiempo para que se esconda
-        resultado.hide(1000);
+        // resultado.hide(1000);
+        resultado.fadeOut(3000);
+
     });
 
     $('.btn-danger').click(function(){
-        resultado.show();
+        // resultado.show();
+        resultado.fadeIn('fast');
     });
 
     $('.btn-warning').click(function(){
