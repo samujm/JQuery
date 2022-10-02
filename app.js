@@ -85,6 +85,22 @@ $(document).ready(function(){
     // });
 
 
+    //--------------- Animaciones con jquery
+    
+    var resultado = $('#resultado');
+
+    $('.btn-primary').click(function(){
+        //Se coloca el tiempo para que se esconda
+        resultado.hide(1000);
+    });
+
+    $('.btn-danger').click(function(){
+        resultado.show();
+    });
+
+    $('.btn-warning').click(function(){
+        resultado.toggle(1000);
+    });
 
 
 });
