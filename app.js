@@ -89,21 +89,38 @@ $(document).ready(function(){
     
     var resultado = $('#resultado');
 
+    // $('.btn-primary').click(function(){
+    //     //Se coloca el tiempo para que se esconda
+    //     // resultado.hide(1000);
+    //     resultado.fadeOut(3000);
+
+    // });
+
+    // $('.btn-danger').click(function(){
+    //     // resultado.show();
+    //     resultado.fadeIn('fast');
+    // });
+
+    // $('.btn-warning').click(function(){
+    //     resultado.toggle(1000);
+    // });
+
+
+
     $('.btn-primary').click(function(){
-        //Se coloca el tiempo para que se esconda
-        // resultado.hide(1000);
-        resultado.fadeOut(3000);
-
+        resultado.animate({
+            left: '250px',
+            opacity: '0.5',
+            height: '+=150px',
+            width: '+=150px'
+        },3000, function () {
+            resultado.animate({
+                left: '0px',
+                opacity: '1',
+                height: '-=150px',
+                with: '-=150px'
+            },1000)
+        });
     });
-
-    $('.btn-danger').click(function(){
-        // resultado.show();
-        resultado.fadeIn('fast');
-    });
-
-    $('.btn-warning').click(function(){
-        resultado.toggle(1000);
-    });
-
 
 });
