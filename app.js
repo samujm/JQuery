@@ -28,4 +28,10 @@ $(document).ready(function(){
 
     $('#contenido').append('<h1>Este es un elemento al final</h1>');
     $('#contenido').prepend('<h1>Este es un elemento al principio</h1>');
+
+    //propiedad css
+    $('#color-azul').css('color', 'blue');
+    //Colocar más propiedades css al mismo tiempo
+    $('#color-azul').css({color:'blue', background: 'salmon', padding: '20px'});
+
 });
