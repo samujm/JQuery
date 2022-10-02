@@ -61,4 +61,22 @@ $(document).ready(function(){
     // });
 
 
+    //---------------EVENTOS KEYUP
+
+    var input = $('#nombre');
+    var contenido = $('#mostrar-texto');
+
+    input.keyup(function () { 
+        console.log(input.val());
+        contenido.html(input.val());
+
+        if (input.val() === "") {
+            contenido.html("Estoy esperando...");
+        }
+    });
+    
+
+
+
+
 });
