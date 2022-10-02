@@ -25,4 +25,7 @@ $(document).ready(function(){
     $('#idh1').addClass('text-danger');
     //Quitar clase
     $('#idh1').removeClass('display-4');
+
+    $('#contenido').append('<h1>Este es un elemento al final</h1>');
+    $('#contenido').prepend('<h1>Este es un elemento al principio</h1>');
 });
