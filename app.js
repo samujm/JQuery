@@ -34,4 +34,11 @@ $(document).ready(function(){
     //Colocar más propiedades css al mismo tiempo
     $('#color-azul').css({color:'blue', background: 'salmon', padding: '20px'});
 
+    //Con remove desaparece completamente el elemento
+    $('#color-azul').remove();
+    //Con hide no aparece en la pagina pero si en html, con la propiedad none
+    $('#color-azul').hide();
+
+    
+
 });
