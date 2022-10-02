@@ -78,11 +78,11 @@ $(document).ready(function(){
 
     //---------------preventDefault No haga lo que viene por defecto en el navegador
 
-    $('#formulario').submit(function (e) { 
-        e.preventDefault();
-        var nombre = $('#nombre').val();
-        console.log(nombre);
-    });
+    // $('#formulario').submit(function (e) { 
+    //     e.preventDefault();
+    //     var nombre = $('#nombre').val();
+    //     console.log(nombre);
+    // });
 
 
 
