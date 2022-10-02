@@ -39,6 +39,9 @@ $(document).ready(function(){
     //Con hide no aparece en la pagina pero si en html, con la propiedad none
     $('#color-azul').hide();
 
-    
+    //atributos 
+    $('img').attr('src', 'https://josefacchin.com/wp-content/uploads/2020/02/como-quitar-el-fondo-de-una-imagen.png');
+    $('img:last').attr('width','50');
+
 
 });
